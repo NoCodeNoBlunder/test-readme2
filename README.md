@@ -26,27 +26,38 @@ Developed and tested on Linux Debian 12.
 - [Features](#features)
 - [How to build](#how-to-build)
 - [Usage](#usage)
+- [Keybinds](#keybinds)
+- [Frontend Manual](#frontend-manual)
 
 ## Changes to SimulIDE
 This project is a fork of SimulIDE.
 It extends SimulIDE by adding a robot package, which serves
 as a model for the physical robot.
-The robot package connects via sysv-ipc to the frontend, implemented with 
+The robot package connects via sysv-ipc to the frontend, implemented using
 pygame-ce.
 
 ## The Hardware simulated
 <!-- ![Robot Image](robot_photo.png) -->
-The Robot is a custom build robot built Atmega328p microcontroller.
+The robot is custom built arround the Atmega328p microcontroller.
 <p align="center">
   <img src="robot_photo.png" alt="Robot Image" width="400"/>
 </p>
 
 ## Features
-- Synchronization between Circuit Simulator and frontend.
-- Pick up the robot and rotating it.
-- Track Builder including obstacles and bright sunspots.
-- Simulating hardware imperfections
-- Ultrasonic simulation
+
+### Simulation and UI Speed Control
+Adjust the simulation speed (via SimulIDE) and the UI refresh rate, 
+allowing to observe the system in slow motion.
+### Synchronization between Circuit Simulator and frontend.
+### Robot Manipulation
+Interact directly with the robot by picking it up, moving or rotating it.
+### Track Builder
+Design custom tracks using a drag and drop editor,
+add obstacles or sunspots, and save or load created tracks.
+### Simulating hardware imperfections
+Simulates real-world hardware limitations by allowing adjustments to motor performance and sensor behavior.
+### Ultrasonic simulation
+Model ultrasonic distance sensors, including reflections.
 
 ## How to build:
 
@@ -138,7 +149,19 @@ python -m src.main
 
 -----------
 
-## Pygame Manual
+## Keybinds and Controls
+- `W` - Camera upwards
+- `S` - Camera downwards
+- `A` - Camera left
+- `D` - Camera right
+- `Q` - Camera zoom in
+- `E` - Camera zoom out
+- `Left Click and Drag` - Drag robot or obstacle
+- `Right Click + Mousewheel` - Rotate robot
+- `Right Arrow, Left Arrow` - Rotate robot
+- `Space` - Start/Stop Simulation
+
+## Frontend Manual
 Manual for the frontend simualtor GUI.
 ### Buttons:
 - `Settings` - Opens Settings Window
@@ -164,18 +187,6 @@ Manual for the frontend simualtor GUI.
 - `Hold Strg while of before drawing` - Snaps mouse to end or start of line
 - `Strg + Z` - Undo last line
 
-### Main Controls:
-- `W` - Camera upwards
-- `S` - Camera downwards
-- `A` - Camera left
-- `D` - Camera right
-- `Q` - Camera zoom in
-- `E` - Camera zoom out
-- `Left Click and Drag` - Drag robot or obstacle
-- `Right Click + Mousewheel` - Rotate robot
-- `Right Arrow, Left Arrow` - Rotate robot
-- `Space` - Start/Stop Simulation
-
 ### Settings:
 - `FPS` - Frames per second, applies only to the visuals
 - `Battery Voltage` - Changes the robot speed
@@ -186,6 +197,3 @@ Manual for the frontend simualtor GUI.
 - `Enable|Disable Ulatrasonic Rays` - Enables or disables the ultrasonic visualization. Disable if not required for better performance
 - `Enable|Disable Sunbeams` - Enables or disables the spots on the track that are more sensitive to the IR-sensors.
 - `Enable|Disable Sync to SimulIDE` - Enables or disables the synchronization to SimulIDE. Disable for better performance, at the cost of simulation accuracy.
-
-
-
