@@ -26,7 +26,6 @@ Developed and tested on Linux Debian 12.
 - [Features](#features)
 - [How to build](#how-to-build)
 - [Usage](#usage)
-- [Keybinds](#keybinds)
 - [Frontend Manual](#frontend-manual)
 
 ## Changes to SimulIDE
@@ -38,13 +37,18 @@ pygame-ce.
 
 ## The Hardware simulated
 <!-- ![Robot Image](robot_photo.png) -->
-The robot is custom built arround the Atmega328p microcontroller.
+The robot is custom built around the **Atmega328p microcontroller**.
 <p align="center">
   <img src="robot_photo.png" alt="Robot Image" width="400"/>
 </p>
 
+A full pin mapping of the robot can be found in the [Pin Mapping PDF](docs/pin_mapping.pdf).
+
 ## Features
 
+### Camera Control
+Adjust the camera to follow the robot or keep it stationary and 
+move it manually. Also allows to zoom in and out for a better view of the simulation.
 ### Simulation and UI Speed Control
 Adjust the simulation speed (via SimulIDE) and the UI refresh rate, 
 allowing to observe the system in slow motion.
@@ -149,7 +153,8 @@ python -m src.main
 
 -----------
 
-## Keybinds and Controls
+## Frontend Manual
+### Keybinds
 - `W` - Camera upwards
 - `S` - Camera downwards
 - `A` - Camera left
@@ -161,7 +166,6 @@ python -m src.main
 - `Right Arrow, Left Arrow` - Rotate robot
 - `Space` - Start/Stop Simulation
 
-## Frontend Manual
 Manual for the frontend simualtor GUI.
 ### Buttons:
 - `Settings` - Opens Settings Window
