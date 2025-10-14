@@ -39,7 +39,7 @@ pygame-ce.
 <!-- ![Robot Image](robot_photo.png) -->
 The robot is custom built around the **Atmega328p microcontroller**.
 <p align="center">
-  <img src="robot_photo.png" alt="Robot Image" width="400"/>
+  <img src="docs/robot_photo.png" alt="Robot Image" width="400"/>
 </p>
 
 A full pin mapping of the robot can be found in the [Pin Mapping PDF](docs/pin_mapping.pdf).
@@ -149,7 +149,7 @@ python -m src.main
 - From the GUI, select `Open Circuit` or press `CTRL + o`.
 - Via file picker the robot circuit has to be selected which is located at `./robot_circuits/robot_circuit.sim1`
 - To start the frontend right click on the `Robot Package` and in the context menu press `Start Robot Simulator`.
-- The simulation can be started and paused by pressing ![power Button Image](poweroff.png) or space
+- The simulation can be started and paused by pressing ![power Button Image](docs/poweroff.png) or space
 
 -----------
 
