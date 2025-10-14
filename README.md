@@ -154,6 +154,8 @@ python -m src.main
 -----------
 
 ## Frontend Manual
+Manual for the frontend simualtor GUI.
+
 ### Keybinds
 - `W` - Camera upwards
 - `S` - Camera downwards
@@ -166,7 +168,6 @@ python -m src.main
 - `Right Arrow, Left Arrow` - Rotate robot
 - `Space` - Start/Stop Simulation
 
-Manual for the frontend simualtor GUI.
 ### Buttons:
 - `Settings` - Opens Settings Window
 - `Reset Position` - Resets robot position and orientation
