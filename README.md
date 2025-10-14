@@ -18,14 +18,16 @@ Developed and tested on Linux Debian 12.
 [![IESimulIDE Demo](demo.gif)](https://youtu.be/PN1a-BrEbtA)
 ![video](compressed3.mp4)
 
+[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
 ## Table of Contents
-- [Changes to SimulIDE]
+- [Changes to SimulIDE](#changes-to-simulide)
 - [Simulated Hardware](#simulated-hardware)
 - [Features](#features)
 - [How to build](#how-to-build)
 - [Usage](#usage)
 
-## Changes made to SimulIDE
+## Changes to SimulIDE
 This project is a fork of SimulIDE.
 It extends SimulIDE by adding a robot package, which serves
 as a model for the physical robot.
