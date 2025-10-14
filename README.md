@@ -150,6 +150,7 @@ python -m src.main
 - Via file picker the robot circuit has to be selected which is located at `./robot_circuits/robot_circuit.sim1`
 - To start the frontend right click on the `Robot Package` and in the context menu press `Start Robot Simulator`.
 - The simulation can be started and paused by pressing ![power Button Image](docs/poweroff.png) or space
+- For more details, see the [Frontend Manual](#frontend-manual) section.
 
 -----------
 
