@@ -3,7 +3,7 @@
 IESimulIDE is a line-follower robot simulator, built on top of the amazing
 [SimulIDE](https://simulide.com) electronic circuit simulator.
 It is developed at the University of Kassel, Germany, by the Department of Computer Science, Chair of Intelligent Embedded Systems.
-The aim is to allow students to simulate the actual robots used at the university to ease
+The aims to allow students to simulate the actual robots used at the university to ease
 experimentation and make learning more accessible. 
 
 It can also be used as a tool for debugging robot firmware by using SimulIDE's feature to slow down the simulation speed
@@ -13,9 +13,12 @@ This project is licensed under AGPL-3.0, in accordance with the original SimulID
 Developed and tested on Linux Debian 12.
 
 ## Preview
-<!-- ![Demo Gif](assets/demo3.gif) -->
 
-![Demo Video](assets/compressed3.mp4)
+![IESimulIDE Demo](demo3.gif)
+[![IESimulIDE Demo](demo.gif)](https://youtu.be/PN1a-BrEbtA)
+![video](compressed3.mp4)
+
+[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ## Table of Contents
 - [Changes to SimulIDE](#changes-to-simulide)
@@ -36,34 +39,29 @@ pygame-ce.
 <!-- ![Robot Image](robot_photo.png) -->
 The robot is custom built around the **Atmega328p microcontroller**.
 <p align="center">
-  <img src="assets/robot_photo.png" alt="Robot Image" width="400"/>
+  <img src="docs/robot_photo.png" alt="Robot Image" width="400"/>
 </p>
 
-A full pin mapping of the robot can be found in the [Pin Mapping PDF](assets/pin_mapping.pdf).
+A full pin mapping of the robot can be found in the [Pin Mapping PDF](docs/pin_mapping.pdf).
 
 ## Features
-- **Camera Control**  
-  Adjust the camera to follow the robot or keep it stationary and move it manually. Also allows zooming in and out for a better view of the simulation.
 
-- **Simulation and UI Speed Control**  
-  Adjust the simulation speed (via SimulIDE) and the UI refresh rate to observe the system in slow motion.
-
-- **Synchronization**  
-  Ensures proper communication between the circuit simulator and frontend.
-
-- **Robot Manipulation**  
-  Interact directly with the robot by picking it up, moving, or rotating it.
-
-- **Track Builder**  
-  Design custom tracks using a drag-and-drop editor, add obstacles or sunspots, and save or load tracks.
-
-- **Simulating Hardware Imperfections**  
-  Simulate real-world hardware limitations by adjusting motor performance and sensor behavior.
-
-- **Ultrasonic Simulation**  
-  Model ultrasonic distance sensors, including reflections.
-
------------
+### Camera Control
+Adjust the camera to follow the robot or keep it stationary and 
+move it manually. Also allows to zoom in and out for a better view of the simulation.
+### Simulation and UI Speed Control
+Adjust the simulation speed (via SimulIDE) and the UI refresh rate, 
+allowing to observe the system in slow motion.
+### Synchronization between Circuit Simulator and frontend.
+### Robot Manipulation
+Interact directly with the robot by picking it up, moving or rotating it.
+### Track Builder
+Design custom tracks using a drag and drop editor,
+add obstacles or sunspots, and save or load created tracks.
+### Simulating hardware imperfections
+Simulates real-world hardware limitations by allowing adjustments to motor performance and sensor behavior.
+### Ultrasonic simulation
+Model ultrasonic distance sensors, including reflections.
 
 ## How to build:
 
@@ -151,8 +149,7 @@ python -m src.main
 - From the GUI, select `Open Circuit` or press `CTRL + o`.
 - Via file picker the robot circuit has to be selected which is located at `./robot_circuits/robot_circuit.sim1`
 - To start the frontend right click on the `Robot Package` and in the context menu press `Start Robot Simulator`.
-- The simulation can be started and stopped by pressing space or using the
-<img src="assets/poweroff.png" alt="power Button Image" width="20" style="vertical-align: middle;"> button.
+- The simulation can be started and paused by pressing ![power Button Image](docs/poweroff.png) or space
 - For more details, see the [Frontend Manual](#frontend-manual) section.
 
 -----------
